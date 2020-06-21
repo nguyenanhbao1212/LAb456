@@ -86,6 +86,11 @@ namespace Lab456
             }
             return manager;
         }
+
+        internal Task ResetPasswordAsync(object code, string id, string password)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     // Configure the application sign-in manager which is used in this application.

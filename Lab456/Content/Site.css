@@ -1,30 +1,39 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.navbar-inverse {
+    background-color: #39539a;
+    border-color: #693737;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.navbar-inverse .navbar-nar > li a{
+    color: white;
 }
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column */
-    body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #821c1c;
-    background-color: #ffffff;
+.navbar-inverse .navbar-brand{
+    color:white
 }
-.dl-horizontal dt {
-    white-space: normal;
+/*Course layout*/
+.course{
+    list-style: none;
 }
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.course > li{
+    position: relative;
+    margin-bottom: 30px;
+}
+.course > li .date{
+    text-align:center;
+    background-color:#198d32;
+    color:white;
+    width: 60px;
+    border-radius: 8px;
+}
+.course > li .details{
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+.course > li .action{
+    display: none;
+    left: 70px;
+    position: absolute;
+}
+.course > li:hover .action{
+    display: block;
 }

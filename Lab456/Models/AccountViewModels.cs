@@ -86,6 +86,8 @@ namespace Lab456.Models
 
     public class ResetPasswordViewModel
     {
+   //     internal object Code;
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

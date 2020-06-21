@@ -254,12 +254,12 @@ namespace Lab456.Controllers
                 // Don't reveal that the user does not exist
                 return RedirectToAction("ResetPasswordConfirmation", "Account");
             }
-            var result = await UserManager.ResetPasswordAsync(user.Id, model.Code, model.Password);
-            if (result.Succeeded)
+            var Result = await UserManager.ResetPasswordAsync(model.code, user.Id, model.Password);
+            if (Result.Succeeded)
             {
                 return RedirectToAction("ResetPasswordConfirmation", "Account");
             }
-            AddErrors(result);
+            AddErrors(Result);
             return View();
         }
 
